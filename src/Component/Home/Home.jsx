@@ -1,10 +1,11 @@
-import About from '../../Pages/About/About'
 import Welcome from '../Welcome/Welcome'
-import Who from '../Whoweare/Who'
+import About from '../../Pages/About/About'
+import Who from '../Whoweare/Who'    
 import './home.css'
 const Home = () => {
     return (
         <>
+        <div className="container-fluid">
         <div className="row">
             <div className="col-lg-12">
                 <div className="header">
@@ -26,6 +27,7 @@ const Home = () => {
                    <Who/>
                 </div>
             </div>
+        </div>
         </div>
         </>
     )

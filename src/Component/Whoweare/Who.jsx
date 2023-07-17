@@ -39,17 +39,20 @@ const Who = () => {
                 whoCard.map((e)=>{
                     return(
                         <>
-                        <div className="col-lg-4 who_card">
+                        <div className="col-lg-4 col-md-6 col-sm-12">
+                            <div className=" who_card">
                             <div className="who_icon_h"><FaRegLightbulb/></div>
+                            <div className="who_number_icon_h">{e.id}</div>
                             <div className="who_card_title">{e.title}</div>
                             <div className="who_card_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                             Sit praesentium animi suscipit ab non esse unde facilis atque consequatur beatae?</div>
+                            </div>
                         </div>
                         </>
                     )
                 })
             }
-            </div>
+          </div>
      
       </div>
     </>

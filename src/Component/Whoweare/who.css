@@ -4,6 +4,9 @@
   display: flex;
   gap: 10px;
 }
+.who_container_h{
+    margin: auto !important;
+}
 .who_lines_div_h .who_lineOne_h::before {
   content: "";
   position: absolute;
@@ -44,12 +47,66 @@ height: 100%;
   color: #666;
 }
 .who_card_div_h .who_card{
-    padding: 20px;
+    width: 90%;
+    padding: 50px 15px;
+    margin-bottom: 20px;
+    /* margin-right: 31px; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+    position: relative;
+}
+.who_card:hover{
+    background-color: #ff2c57;
+    color: #fff;
+    transition:all .5s ease-in-out 0s;
+    margin-left: 5px;
+}
+.who_icon_h{
+    font-size: 50px;
+    color: #ff2c57;
+}
+.who_card:hover .who_icon_h{
+    color: #fff;
+    transition: 0.4s  ease-out;
+}
+.who_card_title{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+.who_card_title:hover{
+    color: #fff;
+    transition: 0.4s  ease-out;
+}
+.who_card_body{
+margin-bottom: 20px;
+font-size: 20px ;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #666;
+}
+.who_card:hover .who_card_body{
+    color: #fff;
+    transition: 0.4s ease-out;
+}
+.who_number_icon_h{
+    bottom: 0;
+    color: rgba(0,0,0,.03);
+    font-size: 200px;
+    line-height: 180px;
+    position: absolute;
+    right: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding-bottom: 15px;
 }
 
 @media screen and (250px <= width <= 354px){
     .who_line_para_h p{
         width: 100%;
+    }
+    .who_card_div_h .who_card{
+        /* width: 100% !important; */
     }
     
 }
@@ -57,19 +114,26 @@ height: 100%;
     .who_line_para_h p{
         width: 100%;
     }
+    .who_card_div_h .who_card{
+        /* width: 100% !important; */
+    }
     
 }
 @media screen and (481px <= width <= 767px){
     .who_line_para_h p{
         width: 100%;
     }
-    
+    .who_card_div_h .who_card{
+        /* width: 50% !important; */
+    }
 }
 @media screen and (768px <= width <= 1023px){
     .who_line_para_h p{
         width: 100%;
     }
-    
+    .who_card_div_h .who_card{
+        /* width: 45% !important; */
+    }
 }
 @media screen and (1024px <= width <= 1279px){
     .who_line_para_h p{
