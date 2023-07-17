@@ -1,11 +1,13 @@
+import { useNavigate } from 'react-router-dom';
 import './footer.css'
 import { FaFacebook,FaTwitter,FaSkype,FaInstagram,FaLinkedinIn,FaRegCopyright } from 'react-icons/fa';
 const Footer = () => {
+    let navigate=useNavigate()
   return (
     <>
     <div className='footer_main_h'>
       <div className='footer_div_h'>
-      <div className='footer_logo_h'><p className='logo_text_h'><span className='color_logo_h'>A</span>DDAX</p></div>
+      <div className='footer_logo_h' ><p className='logo_text_h'  onClick={()=>navigate('/')}><span className='color_logo_h'>A</span>DDAX</p></div>
       <div className='footer_icons_h'>
         <div className='footer_logo_h'><p className='facebook_logo_h'><FaFacebook/></p></div>
         <div className='footer_logo_h'><p className='facebook_logo_h'><FaTwitter/></p></div>

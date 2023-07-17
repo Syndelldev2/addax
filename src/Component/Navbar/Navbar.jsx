@@ -1,64 +1,78 @@
-
-import { Link } from 'react-router-dom'
+/* eslint-disable */
+import React from 'react'
 import './navbar.css'
+import { NavLink } from 'react-router-dom'
+// import hamburger_icon from '../../Assets/icons/bar_icon.svg'
 const Navbar = () => {
-  return (
-    <>
-    {/* <div className='navbar_main_h'>
-        <div className='navbar_container_h'>
-            <div className='navbar_logo_h'>
-                <p><span className='color_logo_h'>A</span>DDAX</p>
-            </div>
-            <ul className='navbar_list_h'>
-                <li><Link to={'/'} className='navLink_active_h active'>Home</Link></li>
-                <li><Link to={'/about'} className='navLink_active_h'>About</Link></li>
-                <li><Link to={'/team'} className='navLink_active_h'>Team</Link></li>
-                <li><Link to={'/services'} className='navLink_active_h'>Services</Link></li>
-                <li><Link to={'/work'} className='navLink_active_h'>Work</Link></li>
-                <li><Link to={'/price'} className='navLink_active_h'>Price</Link></li>
-                <li><Link to={'/blog'} className='navLink_active_h'>Blog</Link></li>
-                <li><Link to={'/contact'} className='navLink_active_h'>Contact</Link></li>
-            </ul>
-        </div>
-    </div> */}
-    <nav className="navbar navbar-expand-lg navbar-light sticky-top shadow">
-  <div className="container ">
-    <a className="navbar-brand" href="#"><p><span className='color_logo_h'>A</span>DDAX</p></a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav m-auto mb-lg-0">
-        <li className="nav-item pe-3">
-          <Link className="nav-link navLink_active_h" aria-current="page" href="#">Home</Link>
-        </li>
-        <li className="nav-item pe-3">
-          <Link className="nav-link navLink_active_h" href="#">About</Link>
-        </li> 
-        <li className="nav-item pe-3">
-          <Link className="nav-link navLink_active_h" href="#">Team</Link>
-        </li> 
-        <li className="nav-item pe-3">
-          <Link className="nav-link navLink_active_h" href="#">Services</Link>
-        </li> 
-        <li className="nav-item pe-3">
-          <Link className="nav-link navLink_active_h" href="#">Work</Link>
-        </li> 
-        <li className="nav-item pe-3">
-          <Link className="nav-link navLink_active_h" href="#">Price</Link>
-        </li> 
-        <li className="nav-item pe-3">
-          <Link className="nav-link navLink_active_h" href="#">Blog</Link>
-        </li> 
-        <li className="nav-item pe-3">
-          <Link className="nav-link navLink_active_h" href="#">Contact</Link>
-        </li> 
-       </ul>
-    </div>
-  </div>
-</nav>
-    </>
-  )
+    return (
+        <>
+            {/* <div className="container-fluid">
+                <div className="row shadow">
+                    <div className="col-lg-12">
+                        <div className="navbar_main_h">
+                            <div className="navbar_logo_h">
+                                <div className="navbar-brand">
+                                    <div className='company_name_h'><span className='A'>A</span>DDAX</div>
+                                    <label htmlFor="hamburger">
+                                        <img src={hamburger_icon} alt="bar_btn" className='hamburger_btn_h' />
+                                    </label>
+                                    <input type="checkbox" id='hamburger' />
+                                </div>
+                            </div>
+                            <div className="navbar_list_h">
+                                <ul className='item_list_h'>
+                                    <li className='item'><Link>Home</Link></li>
+                                    <li className='item'><Link>About</Link></li>
+                                    <li className='item'><Link>Team</Link></li>
+                                    <li className='item'><Link>Services</Link></li>
+                                    <li className='item'><Link>Work</Link></li>
+                                    <li className='item'><Link>Price</Link></li>
+                                    <li className='item'><Link>Blog</Link></li>
+                                    <li className='item'><Link>Contact</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+            <nav className="navbar navbar-expand-lg shadow navbar_main_h">
+                <div className="container">
+                    <NavLink className="navbar-brand navbar_logo_h" href="#"><div className='logo_div_h'><span className='navbar_logo_text_h'>A</span>DDAX</div></NavLink>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul className="navbar-nav navbar_ul_h mb-2 mb-lg-0 ">
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" aria-current="page" to="/">Home</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" to="/about">About</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" to="/team">Team</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" to="/services">Services</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" to="/work">Work</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" to="/price">Price</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" to="/blog">Blog</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" to="/contact">Contact</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </>
+    )
 }
 
 export default Navbar

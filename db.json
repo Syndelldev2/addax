@@ -1,0 +1,45 @@
+{
+  "wlecome-card":[
+    {
+      "id":1,
+      "title":"Creative Design"
+    },
+    {
+      "id":2,
+      "title":"Friendly Codes"
+    },
+    {
+      "id":3,
+      "title":"Fast Support"
+    }
+  ],
+  "whocards":[
+    {
+      "id":1,
+      "title":"We Are Professional"
+    },
+    {
+      "id":2,
+      "title":"We Are Passionate"
+    },
+    {
+      "id":3,
+      "title":"We Are Creative"
+    },
+    {
+      "id":4,
+      "title":"We Are Designer"
+    },
+    {
+      "id":5,
+      "title":"We Are Unique"
+    },
+    {
+      "id":6,
+      "title":"We Are Support"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
