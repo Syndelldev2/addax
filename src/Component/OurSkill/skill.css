@@ -1,0 +1,16 @@
+.skill_container_h .skill_row_h{
+ margin: 80px 0px;
+}
+.skill_div_h h1{
+    font-weight: 300;
+}
+.skill_div_h h1 span{
+    font-weight: 600;
+    color: #ff2c57;
+}
+.skill_div_h p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #666;
+}

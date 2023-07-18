@@ -1,97 +1,114 @@
 .whoweare_main_div {
-  position: relative;
-  margin: 50px 0px;
-  display: flex;
-  gap: 10px;
+    position: relative;
+    margin: 50px 0px;
+    display: flex;
+    gap: 10px;
 }
-.who_container_h{
+
+.who_container_h {
     margin: auto !important;
 }
+
 .who_lines_div_h .who_lineOne_h::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background-color: #ff2c57;
-  transition: 0.4s;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #ff2c57;
+    transition: 0.4s;
 }
+
 .who_lines_div_h .who_lineTwo_h::before {
-  content: "";
-  position: absolute;
-  left: -8px;
-  width: 4px;
-  height: 50%;
-  background-color: #ff2c57;
-  transition: 0.4s;
+    content: "";
+    position: absolute;
+    left: -8px;
+    width: 4px;
+    height: 50%;
+    background-color: #ff2c57;
+    transition: 0.4s;
 }
-.whoweare_main_div:hover .who_lineOne_h::before{
-height: 50%;
+
+.whoweare_main_div:hover .who_lineOne_h::before {
+    height: 50%;
 }
-.whoweare_main_div:hover .who_lineTwo_h::before{
-height: 100%;
+
+.whoweare_main_div:hover .who_lineTwo_h::before {
+    height: 100%;
 }
+
 .who_line_para_h h1 {
-  font-weight: 300;
+    font-weight: 300;
 }
+
 .who_line_para_h h1 span {
-  color: #ff2c57;
-  font-weight: 600;
+    color: #ff2c57;
+    font-weight: 600;
 }
+
 .who_line_para_h p {
-  width: 60%;
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.8;
-  color: #666;
+    width: 60%;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #666;
 }
-.who_card_div_h .who_card{
+
+.who_card_div_h .who_card {
     width: 90%;
-    padding: 50px 15px;
+    padding: 10px 15px;
     margin-bottom: 20px;
     /* margin-right: 31px; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 8px;
     position: relative;
 }
-.who_card:hover{
+
+.who_card:hover {
     background-color: #ff2c57;
     color: #fff;
-    transition:all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
     margin-left: 5px;
 }
-.who_icon_h{
+
+.who_icon_h {
     font-size: 50px;
     color: #ff2c57;
 }
-.who_card:hover .who_icon_h{
+
+.who_card:hover .who_icon_h {
     color: #fff;
-    transition: 0.4s  ease-out;
+    transition: 0.4s ease-out;
 }
-.who_card_title{
+
+.who_card_title {
     font-size: 22px;
     font-weight: 500;
     padding: 10px 0px;
 }
-.who_card_title:hover{
+
+.who_card_title:hover {
     color: #fff;
-    transition: 0.4s  ease-out;
+    transition: 0.4s ease-out;
 }
-.who_card_body{
-margin-bottom: 20px;
-font-size: 20px ;
+
+.who_card_body {
+    margin-bottom: 20px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.8;
     color: #666;
 }
-.who_card:hover .who_card_body{
+
+.who_card:hover .who_card_body {
     color: #fff;
     transition: 0.4s ease-out;
 }
-.who_number_icon_h{
+
+.who_number_icon_h {
     bottom: 0;
-    color: rgba(0,0,0,.03);
+    color: rgba(0, 0, 0, .03);
     font-size: 200px;
     line-height: 180px;
     position: absolute;
@@ -101,49 +118,58 @@ font-size: 20px ;
     padding-bottom: 15px;
 }
 
-@media screen and (250px <= width <= 354px){
-    .who_line_para_h p{
+@media screen and (250px <=width <=354px) {
+    .who_line_para_h p {
         width: 100%;
     }
-    .who_card_div_h .who_card{
+
+    .who_card_div_h .who_card {
         /* width: 100% !important; */
     }
-    
+
 }
-@media screen and (355px <= width <= 480px){
-    .who_line_para_h p{
+
+@media screen and (355px <=width <=480px) {
+    .who_line_para_h p {
         width: 100%;
     }
-    .who_card_div_h .who_card{
+
+    .who_card_div_h .who_card {
         /* width: 100% !important; */
     }
-    
+
 }
-@media screen and (481px <= width <= 767px){
-    .who_line_para_h p{
+
+@media screen and (481px <=width <=767px) {
+    .who_line_para_h p {
         width: 100%;
     }
-    .who_card_div_h .who_card{
+
+    .who_card_div_h .who_card {
         /* width: 50% !important; */
     }
 }
-@media screen and (768px <= width <= 1023px){
-    .who_line_para_h p{
+
+@media screen and (768px <=width <=1023px) {
+    .who_line_para_h p {
         width: 100%;
     }
-    .who_card_div_h .who_card{
+
+    .who_card_div_h .who_card {
         /* width: 45% !important; */
     }
 }
-@media screen and (1024px <= width <= 1279px){
-    .who_line_para_h p{
+
+@media screen and (1024px <=width <=1279px) {
+    .who_line_para_h p {
         width: 100%;
     }
-    
+
 }
-@media screen and (1280px <= width <= 1365px){
-    .who_line_para_h p{
+
+@media screen and (1280px <=width <=1365px) {
+    .who_line_para_h p {
         width: 100%;
     }
-    
+
 }

@@ -1,0 +1,106 @@
+.business_container_h {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 50px;
+}
+
+.businessImg_div_h {
+    background-image: url('../../assets/images/business_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.business_main_h {
+    background-color: black;
+    opacity: 0.88;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.business_main_h h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff2c57;
+}
+
+.business_main_h h1 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.business_main_h p {
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.business_btn_h {
+    display: flex;
+    gap: 10px;
+}
+
+.business_main_h .business_btn_h :nth-child(1) {
+    border: 1px solid #ff2c57;
+    border-radius: 30px;
+    background-color: #ff2c57;
+    color: #fff;
+    font-size: 16px;
+    padding: 9px 25px;
+    transition: 0.4s;
+}
+
+.business_main_h .business_btn_h :nth-child(2) {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    padding: 9px 25px;
+    transition: 0.4s;
+}
+
+.business_main_h .business_btn_h :nth-child(1):hover {
+    background-color: #fff;
+    color: #ff2c57;
+    border-color: #fff;
+}
+
+.business_main_h .business_btn_h :nth-child(2):hover {
+    background-color: #ff2c57;
+    transition: 0.4s;
+}
+
+@media screen and (250px <=width <=354px) {
+    .business_main_h p {
+        width: 90%;
+    }
+
+    .business_main_h {
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (355px <=width <=480px) {
+    .business_main_h p {
+        width: 90%;
+    }
+
+    .business_main_h {
+        padding: 50px 0px;
+    }
+
+    .business_main_h h5 {
+        font-size: 20px;
+    }
+
+    .business_main_h h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (481px <=width <=767px) {}
