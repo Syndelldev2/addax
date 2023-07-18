@@ -4,8 +4,8 @@ const Skill = () => {
   return (
     <>
     <div className="container skill_container_h">
-        <div className="row skill_row_h">
-        <div className="col-lg-6 skill_col_h">
+        <div className="row gap-3 skill_row_h">
+        <div className="col-lg-5 skill_col_h">
             <div className="skill_div_h">
                 <h1>Some Of Our <span>Skills</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -20,7 +20,7 @@ const Skill = () => {
                 </div>
             </div>
         </div>
-        <div className="col-lg-6 skill_col_h">
+        <div className="col-lg-5 skill_col_h">
             <div className="skill_img_h">
                 <img src={skill_img} alt="skill_img"/>
             </div>
